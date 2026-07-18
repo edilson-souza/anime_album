@@ -12,7 +12,7 @@ const API_BASE_URL = "http://localhost:8000";
 async function preencherFigurinhas() {
     try {
         // 1. Busca as figurinhas disponíveis na API
-        const response = await fetch(`${API_BASE_URL}/figurinhas`);
+        const response = await fetch("./figurinhas.json");
 
         if (!response.ok) {
             throw new Error(`Erro na API: ${response.status} ${response.statusText}`);
